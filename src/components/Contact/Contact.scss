@@ -11,10 +11,7 @@
     min-height: 100vh;
   }
   
-  .app__Contact-title {
-    max-width: 420px;
-    
-    &-title {
+  .app__Contact-title-title {
       margin-bottom: 8px; 
       font-size: 28px;
       font-weight: 600;
@@ -30,41 +27,6 @@
         margin-top: 100px;
       }
     }
-      
-    &-info {
-      font-size: 16px;
-      font-weight: 400;
-      color: var(--primary-color);
-      line-height: 1.6rem;
-  
-      @media screen and (max-width: 900px) {
-        margin-left: 1rem;
-      }
-  
-      @media screen and (max-width: 450px) {
-        font-size: 1rem;
-      }
-    }
-    @media screen and (max-width: 450px) {
-      margin-top: 0px;
-      margin-left: 0px;
-    }
-  }
-  
-  .app__Contact-blink {
-    font-size: 16px;
-    font-weight: 700;
-    text-align: left;
-    color: var(--primary-color);
-    user-select: none;
-    visibility: hidden;
-    animation: blink .85s infinite;
-    animation-delay: 2s;
-  
-    @media screen and (max-width: 450px) {
-      font-size: 1rem;
-    }
-  }
 
 .app__Contact-content {
     display: flex;

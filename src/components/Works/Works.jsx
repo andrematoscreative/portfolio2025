@@ -20,8 +20,9 @@ const WorkCard = ({ image, alt, description }) => {
 
 const Works = () => {
   return (
-    <div className='app__Work' id='Works'>
+    <div className='app__Work' id='WORK'>
         <div className='app__master-container'>
+            
                 <div className='app__Work-info'>
                     <div className='app__Work-title'>
                         <motion.div
@@ -30,13 +31,6 @@ const Works = () => {
                         className='app__Work-title-title'
                         >
                         Work
-                        </motion.div>
-                        <motion.div
-                        whileInView={{ x: [-100, 0], opacity: [0, 1] }}
-                        transition={{ duration: 1.5 }}
-                        className='app__Work-title-info'>
-                        Check some of my work. Crafting the future, one project at a time.
-                        <div className='app__Work-blink'>|</div>
                         </motion.div>
                     </div>
 
@@ -49,6 +43,7 @@ const Works = () => {
                         {/* <WorkCard image={images.logo} alt='andre matos creative logo' description='Coming soon...'/> */}
                     </motion.div>
                 </div>
+                <img src={images.andrematos_creative_photo}alt='andrematos_creative_photo'/>
         </div>
     </div>
   );

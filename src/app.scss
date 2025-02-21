@@ -1,13 +1,13 @@
 .app {
     background-repeat: no-repeat;
     font-family: var(--font-base);
-    background-color: var(--secondary-color);
+    background-color: var(--primary-color);
 }
 
 .app__master-container {
     position: relative;
     margin: 0 auto;
-    max-width: 1224px;
+    max-width: 1440px;
     width: 100%;
     
     @media screen and (max-width: 450px) {

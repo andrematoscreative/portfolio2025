@@ -7,7 +7,7 @@ import './About.scss';
 
 const About = () => {
   return (
-    <div className='app__About' id='About'>
+    <div className='app__About' id='ABOUT'>
       <div className='app__master-container app_flex'>
         <div className='app__About-info'> 
 
@@ -17,12 +17,6 @@ const About = () => {
             transition={{ duration: 1 }}
             className='app__About-title-title'>About</motion.div>
 
-            <motion.div
-            whileInView={{ x: [-90, 0], opacity: [0,1] }}
-            transition={{ duration: 1.5 }}
-            className='app__About-title-info'>I'm a passionate visual designer and software frontend developer who loves technology and its endless possibilities.
-            <div className='app__About-blink'>|</div>
-            </motion.div>
           </div>
           <div className='app__About-desc'>
               <div className='app__About-desc-content'>

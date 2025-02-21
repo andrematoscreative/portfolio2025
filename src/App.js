@@ -8,9 +8,9 @@ export const App = () => {
         <Navbar />
         <Header />
         <About />
-        <Skills />
+        
         <Works />
-        <Testimonials />
+        
         <Contact />
         <Footer />
     </div>

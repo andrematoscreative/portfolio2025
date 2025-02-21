@@ -44,7 +44,7 @@ const Contact = () => {
   };
 
   return (
-    <div className='app__Contact' id='Contact'>
+    <div className='app__Contact' id='CONTACT'>
       <div className='app__master-container'>
         <div className='app__Contact-info'>
           <div className='app__Contact-title '>
@@ -53,13 +53,6 @@ const Contact = () => {
               transition={{ duration: 1 }}
               className='app__Contact-title-title'>
               Contact
-            </motion.div>
-            <motion.div
-              whileInView={{ x: [-100, 0], opacity: [0, 1] }}
-              transition={{ duration: 1.5 }}
-              className='app__Contact-title-info'>
-              Helping to empower individuals and organizations to reach their fullest potential.
-              <div className='app__Contact-blink'>|</div>
             </motion.div>
           </div>
 

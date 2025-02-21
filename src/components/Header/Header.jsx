@@ -1,63 +1,32 @@
-import React, { useState, useEffect } from 'react';
+import React, { useEffect, useRef } from 'react';
 import { motion } from 'framer-motion';
+import gsap from 'gsap';
 import { images } from '../../constants';
 import './Header.scss';
 
-  const Header = () => {
-  const [text, setText] = useState("")
-  const [fullText] = useState(
-    "Hello World    I'm a"
-  )
-  const [index, setIndex] = useState(0)
+const Header = () => {
+  const textRef = useRef(null);
+
   useEffect(() => {
-    if (index < fullText.length) {
-      setTimeout(() => {
-        setText(text + fullText[index])
-        setIndex(index + 1)
-      }, 170)
-    }
-  }, [index])
-    return (
+    const textLines = textRef.current.children;
+    gsap.fromTo(textLines, 
+      { opacity: 0, y: 20 }, 
+      { opacity: 1, y: 0, stagger: 0.5, duration: 1, ease: 'power2.out' }
+    );
+  }, []);
 
-  <div className='app__header' id='Home'>
-    <div className='app__master-container app__header-container'>
-      <div className='app__header-info'>
-        <motion.div
-        whileInView={{  opacity: [0,1] }}
-        transition={{ duration: 1 }}
-        className='app__header-head-text'>{text}
-        </motion.div>
-
-        <div className='app__header-description'>
-
-          <motion.div
-          whileInView={{ opacity: [0,1] }}
-          transition={{ duration: 4 }}
-          className='app__header-description-text1'>
-          <p>&lt;Visual Designer/&gt;</p>
-          </motion.div>
-
-          <motion.div
-          whileInView={{ opacity: [0,1] }}
-          transition={{ duration: 4 }} 
-          className='app__header-description-text2'>
-          <p>&lt;Software Web Developer/&gt;</p>
-          </motion.div>
-
-          <motion.div
-          whileInView={{ opacity: [0,1] }}
-          transition={{ duration: 4 }}
-          className='app__header-description-text3'>
-          <p>&lt;Technology Lover/&gt;</p>
-          </motion.div>
-
-        </div>
-        <div className='blink'>|</div>
+  return (
+    <div className='app__header' id='HOME'>     
+      <div className='app__master-container app__header-container'>
+          <h1 className='app__header-head-text' ref={textRef}>
+            <span className="light-gray">Hello World! I'm a</span>
+            <div>software web developer</div>
+            <span className="light-gray">with a passion for technology.</span>
+          </h1>
       </div>
-      <img src={images.header_background} alt='header_background'/>
+      <div className='app__header-background'></div>
     </div>
-  </div>
-  )
-}
+  );
+};
 
 export default Header;

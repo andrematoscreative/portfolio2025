@@ -12,14 +12,16 @@
     min-height: 100vh;
     z-index: 2;
     justify-content: center;
+    padding-left: 100px;
 }
   
    
 .app__About-title-title {
         margin-bottom: 8px; 
-        font-size: 28px;
+        font-size: 1.5rem;
         font-weight: 600;
-        color: var(--primary-color);
+        color: var(--lightGray-color);
+        margin-bottom: 50px;
       
         @media screen and (max-width: 900px) {
             margin-left: 1rem;
@@ -31,32 +33,12 @@
         }
     }
 
-.app__About-desc {
-    align-items: center;
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    
-    @media screen and (max-width: 900px) {
-        flex-direction: column;
-        padding: 1rem;
-    }
-}
-
-.app__About-desc-container{
-    border: 2px solid var(--primary-color);
-    box-shadow: 1px 3px 5px var(--primary-color);
-    border-radius: 15px;
-    padding:20px;
-    max-width: 650px;
-}
-
 .app__About-desc-container-text {
     align-items: center;
-    line-height: 2rem;
-    font-size: 18px;
-    color: var(--primary-color);
+    line-height: 3rem;
+    font-size: 2.1rem;
+    max-width: 650px;
+    color: var(--secondary-color);
     
     @media screen and (max-width: 900px) {
         max-width: 700px;
@@ -69,12 +51,12 @@
 }
 
 .app__About-desc-container-icons {
-    margin-top: 20px;
+    margin-top: 50px;
 
     a {
         margin-right: 20px;
-        font-size: 26px;
-        color: var(--primary-color);
+        font-size: 27px;
+        color: var(--secondary-color);
 
         &:hover {
             color: var(--hover-color);
@@ -82,19 +64,3 @@
     }
 }
 
-.app__About-desc-img img {
-    display: flex;
-    max-width: 600px;
-    justify-content: center;
-    align-items: center;
-  
-    @media screen and (max-width: 900px) {
-        margin-bottom: 20px;
-        max-width: 450px;
-    }
-    
-    @media screen and (max-width: 450px) {
-        justify-content: center;
-        max-width: 350px;
-    }
-}

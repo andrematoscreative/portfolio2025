@@ -19,8 +19,7 @@ const Header = () => {
     <div className='app__header' id='HOME'>     
       <div className='app__master-container app__header-container'>
           <h1 className='app__header-head-text' ref={textRef}>
-            <span className="light-gray">Hello World</span>
-            <span className="light-gray">I'm a</span>
+            <span className="light-gray">Hello, I'm a</span>
             <div>software web </div>
             <div>developer</div>
             <span className="light-gray">with a passion</span>

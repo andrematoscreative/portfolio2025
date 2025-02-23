@@ -43,8 +43,8 @@ const Works = () => {
                         {/* <WorkCard image={images.logo} alt='andre matos creative logo' description='Coming soon...'/> */}
                     </motion.div>
                 </div>
-                <img src={images.andrematos_creative_photo}alt='andrematos_creative_photo'/>
         </div>
+        <div className='app__Work_background'></div>
     </div>
   );
 };

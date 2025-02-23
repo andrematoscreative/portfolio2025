@@ -1,55 +1,79 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import './Navbar.scss';
 import { HiMenu } from 'react-icons/hi';
 import { SlClose } from 'react-icons/sl';
 import { motion } from 'framer-motion';
-import { images } from '../../constants';
 
-const Navbar = ({active}) => {
-    const[toggle, setToggle] = useState(false);
-    const [activeLink, setActiveLink] = useState('Home');
+const Navbar = () => {
+    const [toggle, setToggle] = useState(false);
+    const [activeLink, setActiveLink] = useState('HOME');
+    const [isHome, setIsHome] = useState(true);
 
-  return (
-    <div className='app__navbar'>
-        <div className='app__master-container app__navbar-all'>
-            <div className='app__navbar-logo'>
-                <a href={`#HOME`}>
-                ANDRÉ MATOS
-                </a>
-            </div>
+    const sections = ['ABOUT', 'WORK', 'CONTACT'];
 
-            <ul className='app__navbar-links'>
-                {[ 'ABOUT', 'WORK', 'CONTACT'].map((item) => (
-                    <li key={`link-${item}`}>
-                        <div />
-                        <a 
-                        href={`#${item}`}
-                        className={item === activeLink ? 'active' : ''}
-                        onClick={() => setActiveLink(item)}
-                        >{item}
-                        </a>
-                    </li>
-                ))}
-            </ul>
+    useEffect(() => {
+        const handleScroll = () => {
+            const scrollPosition = window.scrollY + 200;
+            let currentSection = 'HOME';
+            setIsHome(scrollPosition < 100); // Check if in Home section
+            
+            sections.forEach((section) => {
+                const element = document.getElementById(section);
+                if (element) {
+                    const offsetTop = element.offsetTop;
+                    const offsetHeight = element.offsetHeight;
+                    if (scrollPosition >= offsetTop && scrollPosition < offsetTop + offsetHeight) {
+                        currentSection = section;
+                    }
+                }
+            });
+            setActiveLink(currentSection);
+        };
 
-            <div className='app__navbar-menu'>
-                <HiMenu onClick={() => setToggle(true)}/>
-                { toggle && (
-                    <motion.div whileInView = {{ x: [300, 0] }} transition = {{ duration: 0.3, ease: 'easeOut'}}>
-                        <SlClose onClick={() => setToggle(false)}/>
-                        <ul>
-                        {['ABOUT', 'WORK', 'CONTACT'].map((item) => (
-                            <li key= {item}>
-                                <a href={`#${item}`} onClick={() => setToggle(false)}>{item}</a>
-                            </li>
-                        ))}
-                        </ul>
-                    </motion.div>
-                )}
+        window.addEventListener('scroll', handleScroll);
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+        };
+    }, []);
+
+    return (
+        <div className='app__navbar'>
+            <div className='app__master-container app__navbar-all'>
+                <div className={`app__navbar-logo ${isHome ? 'home-active' : ''}`}>
+                    <a href={`#HOME`}>ANDRÉ MATOS</a>
+                </div>
+
+                <ul className='app__navbar-links'>
+                    {sections.map((item) => (
+                        <li key={`link-${item}`}>
+                            <a 
+                                href={`#${item}`} 
+                                className={item === activeLink ? 'active' : ''}
+                            >
+                                {item}
+                            </a>
+                        </li>
+                    ))}
+                </ul>
+
+                <div className='app__navbar-menu'>
+                    <HiMenu onClick={() => setToggle(true)} />
+                    {toggle && (
+                        <motion.div whileInView={{ x: [300, 0] }} transition={{ duration: 0.3, ease: 'easeOut' }}>
+                            <SlClose onClick={() => setToggle(false)} />
+                            <ul>
+                                {sections.map((item) => (
+                                    <li key={item}>
+                                        <a href={`#${item}`} onClick={() => setToggle(false)}>{item}</a>
+                                    </li>
+                                ))}
+                            </ul>
+                        </motion.div>
+                    )}
+                </div>
             </div>
         </div>
-    </div>
-  )
-}
+    );
+};
 
-export default Navbar
+export default Navbar;

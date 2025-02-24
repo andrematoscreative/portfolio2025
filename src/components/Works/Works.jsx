@@ -1,4 +1,5 @@
 import React, { useEffect, useRef } from 'react';
+import { motion } from 'framer-motion';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger'; // Import ScrollTrigger
 import { images } from '../../constants';
@@ -30,7 +31,10 @@ const Works = () => {
       <div className='app__master-container'>
         <div className='app__Work-info'>
           <div className='app__Work-title'>
-            <div className='app__Work-title-title'>Work</div>
+          <motion.div
+            whileInView={{ x: [-90, 0], opacity: [0,1] }}
+            transition={{ duration: 0.5 }}
+            className='app__Work-title-title'>Work</motion.div>
           </div>
 
           <div className="app__Work-cards-container">

@@ -5,10 +5,10 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    user-select: none;
+    overflow: hidden;
     z-index: 2;
 }
-
-
 
 .app__About-info {
     flex: 1;

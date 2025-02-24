@@ -1,8 +1,7 @@
 .app__Work {
   position: relative;
   width: 100%;
-  min-height: 100vh;
-  
+  min-height: 100vh;  
   display: flex;
   align-items: center;
   justify-content: center;
@@ -13,18 +12,21 @@
 
 .app__Work-info {
   display: flex;
+  min-height: 100vh;
   flex-direction: column;
   justify-content: center;
-  text-align: center;
+  margin-bottom: 100px;
   z-index: 3;
 }
 
 .app__Work-title-title {
-  font-size: 28px;
-  font-weight: 600;
-  color: var(--secondary-color);
-  margin-bottom: 10px;
-  z-index: 4;
+    
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--lightGray-color);
+    margin-bottom: 50px;
+    margin-top: 150px;
+    padding-left: 100px;
 
   @media screen and (max-width: 900px) {
       margin-left: 1rem;
@@ -49,13 +51,11 @@
   padding: 10px;
   cursor: pointer;
   position: relative;
-  width: 510px;
-  height: 290px;
+  width: 100%;
+  height: 250px;
   margin: 16px;
   overflow: hidden;
-  border: 3px solid var(--primary-color);
-  border-radius: 15px;
-  box-shadow: 1px 3px 5px var(--primary-color);
+  border:  3px solid var(--secondary-color);
 
   @media screen and (max-width: 450px) {
       width: 380px;

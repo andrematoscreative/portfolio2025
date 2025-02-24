@@ -11,7 +11,6 @@ export const App = () => {
       <Navbar />
       <Header />
       <About />
-      <div className='app__shared-background2' style={{ backgroundImage: `url(${backgroundImage2})` }}></div>
       <Works />
       <Contact />
       <Footer />

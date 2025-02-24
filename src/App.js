@@ -1,10 +1,11 @@
-import React from 'react';
+import React, { useEffect, useRef } from 'react';
 import { Navbar, About, Contact, Header, Works, Footer } from './components';
 import './app.scss';
 import backgroundImage from './assets/andrematos_creative_photo.png';
-import backgroundImage2 from './assets/work_background.png';
+import LocomotiveScroll from 'locomotive-scroll';
 
 export const App = () => {
+  
   return (
     <div className='app'>
       <div className='app__shared-background' style={{ backgroundImage: `url(${backgroundImage})` }}></div>

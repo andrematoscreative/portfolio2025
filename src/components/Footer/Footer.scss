@@ -1,5 +1,5 @@
 .app__Footer {
-    background: #0c0c0c;
+    background: #000000;
     padding: 12px;
     text-align: center;
     justify-content: space-between;
@@ -7,6 +7,7 @@
     width: 100%;
     align-items: center;
     user-select: none;
+    min-height: 50px;
 
     @media screen and (max-width: 450px) {
       padding: 0px;

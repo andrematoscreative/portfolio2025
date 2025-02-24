@@ -26,7 +26,7 @@ const About = () => {
             <motion.div
             whileInView={{ x: [-90, 0], opacity: [0,1] }}
             transition={{ duration: 0.5 }}
-            className='app__About-title-title'>About</motion.div>
+            className='app__About-title-title'>ABOUT</motion.div>
 
           </div>
           <div className='app__About-desc'>

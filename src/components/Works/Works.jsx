@@ -34,7 +34,7 @@ const Works = () => {
           <motion.div
             whileInView={{ x: [-90, 0], opacity: [0,1] }}
             transition={{ duration: 0.5 }}
-            className='app__Work-title-title'>Work</motion.div>
+            className='app__Work-title-title'>WORK</motion.div>
           </div>
 
           <div className="app__Work-cards-container">

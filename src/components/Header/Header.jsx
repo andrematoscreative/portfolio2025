@@ -26,7 +26,6 @@ const Header = () => {
             <span className="light-gray">for technology.</span>
           </h1>
       </div>
-      <div className='app__header-background'></div>
     </div>
   );
 };

@@ -1,107 +1,112 @@
 .app__Work {
-    position: relative; 
-    width: 100%;
-    user-select: none;
-  }
-  
-  .app__Work-info {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    min-height: 100vh;
-    z-index: 2;
-  }
-  
-  .app__Work-title-title {
-      margin-bottom: 8px; 
-      font-size: 28px;
-      font-weight: 600;
-      color: var(--primary-color);
-      
-      @media screen and (max-width: 900px) {
-        margin-left: 1rem;
-      }
-  
-      @media screen and (max-width: 450px) {
-        font-size: 2rem;
-        margin-bottom: 8px;
-        margin-top: 100px;
-      }
-    }
-      
-  
-  .app__Work-cards-container{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin-top: 35px;
-  }
-  
-  .app__Work-card {
-    padding: 10px;
-    cursor: pointer;
-    position: relative;
-    width: 510px;
-    height: 290px;
-    margin: 16px;
-    overflow: hidden;
-    border: 3px solid var(--primary-color);
-    border-radius: 15px;
-    box-shadow: 1px 3px 5px var(--primary-color);
-  
-    @media screen and (max-width: 450px) {
-      width: 380px;
-      height: 200px;
-    }
-  }
-  
-  .app__Work-card .card-image {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: center;
-    transition: transform 1s;
-    border-radius: 7px;
-  }
-  
-  .app__Work-card:hover .card-image {
-    transform: scale(1.08);
-  }
-  
-  .card-description {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: absolute;
-    bottom: 0;
-    width: 96%;
-    border-radius: 7px;
-    background-color: var(--secondary-color);
-    color: var(--primary-color);
-    font-size: 14px;
-    font-weight: 500;
-    padding: 40px;
-    transform: translateY(100%);
-    transition: transform 2s;
-  
-    @media screen and (max-width: 450px) {
-      padding: 20px;
-    }
-  }
-  
-  .app__Work-card:hover .card-description {
-    transform: translateY(0);
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  background-color: black; /* Keeps black background */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  user-select: none;
+}
+
+.app__Work-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  z-index: 2;
+}
+
+.app__Work-title-title {
+  font-size: 28px;
+  font-weight: 600;
+  color: var(--primary-color);
+  margin-bottom: 10px;
+
+  @media screen and (max-width: 900px) {
+      margin-left: 1rem;
   }
 
-  .app__Work-background {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-image: url('../../assets/work_background.png');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    z-index: 1;
+  @media screen and (max-width: 450px) {
+      font-size: 2rem;
+      margin-bottom: 8px;
+      margin-top: 100px;
   }
+}
+
+.app__Work-cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 35px;
+}
+
+.app__Work-card {
+  padding: 10px;
+  cursor: pointer;
+  position: relative;
+  width: 510px;
+  height: 290px;
+  margin: 16px;
+  overflow: hidden;
+  border: 3px solid var(--primary-color);
+  border-radius: 15px;
+  box-shadow: 1px 3px 5px var(--primary-color);
+
+  @media screen and (max-width: 450px) {
+      width: 380px;
+      height: 200px;
+  }
+}
+
+.app__Work-card .card-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  transition: transform 1s;
+  border-radius: 7px;
+}
+
+.app__Work-card:hover .card-image {
+  transform: scale(1.08);
+}
+
+.card-description {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  bottom: 0;
+  width: 96%;
+  border-radius: 7px;
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+  font-size: 14px;
+  font-weight: 500;
+  padding: 40px;
+  transform: translateY(100%);
+  transition: transform 2s;
+
+  @media screen and (max-width: 450px) {
+      padding: 20px;
+  }
+}
+
+.app__Work-card:hover .card-description {
+  transform: translateY(0);
+}
+
+.app__Work-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-image: url('../../assets/work_background.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0.6;
+  z-index: 0;
+}

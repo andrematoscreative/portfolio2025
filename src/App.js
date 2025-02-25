@@ -2,7 +2,6 @@ import React, { useEffect, useRef } from 'react';
 import { Navbar, About, Contact, Header, Works, Footer } from './components';
 import './app.scss';
 import backgroundImage from './assets/andrematos_creative_photo.png';
-import LocomotiveScroll from 'locomotive-scroll';
 
 export const App = () => {
   

@@ -18,6 +18,13 @@ const Contact = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+
+    // ✅ Check if all fields are filled
+    if (!name || !email || !message) {
+      alert('Please fill in all fields before sending the message.');
+      return; // Stop the function if any field is empty
+    }
+
     setLoading(true);
 
     emailjs.sendForm(
@@ -34,7 +41,8 @@ const Contact = () => {
           setIsFormSubmitted(false);
           setShowForm(true);
         }, 2000);
-      }, (error) => {
+      })
+      .catch((error) => {
         console.error(error);
         setLoading(false);
       });
@@ -52,13 +60,15 @@ const Contact = () => {
               whileInView={{ x: [-100, 0], opacity: [0, 1] }}
               transition={{ duration: 1 }}
               className='app__Contact-title-title'>
-              Contact
+              CONTACT
             </motion.div>
           </div>
 
           <motion.div
             whileInView={{ y: [-30, 0], opacity: [0,1] }}
-            transition={{ duration: 1.5 }} className='app__Contact-content'>
+            transition={{ duration: 1.5 }} 
+            className='app__Contact-content'>
+            
             {!isFormSubmitted && showForm && (
               <form className="app__Contact-content-form" onSubmit={handleSubmit}>
                 <div>
@@ -77,6 +87,7 @@ const Contact = () => {
                 <button type="submit" disabled={loading}>{loading ? 'Sending...' : 'Send Message'}</button>
               </form>
             )}
+
             {isFormSubmitted && (
               <div>
                 <h3 className="app__Contact-content-form-message">
@@ -91,4 +102,4 @@ const Contact = () => {
   );
 };
 
-export default Contact; /*test*/
+export default Contact;

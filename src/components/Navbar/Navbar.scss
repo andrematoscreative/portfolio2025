@@ -3,7 +3,6 @@
     position: fixed;
     width: 100%;
     z-index: 10;
-    height:60px;
     display: flex;
     align-items: center;
 
@@ -22,15 +21,19 @@
 
     
     a {
-        margin: 0.5rem 0.5rem;
+        margin: 3rem 1rem;
         display: flex;
         align-items: center;
-        font-size: 1.2rem;
-        font-weight: 900;
+        font-size: 1.8rem;
+        font-weight: 700;
         color: var(--lightGray-color);
         text-decoration: none;
         max-width: 80px;
-        line-height: 18px;
+        line-height: 25px;
+
+        &:hover {
+            color: var(--secondary-color);
+        }
     }
 }
 
@@ -49,8 +52,8 @@
         a {
             color: var(--lightGray-color);
             text-decoration: none;
-            font-size: 14px;
-            font-weight: 900;
+            font-size: 1rem;
+            font-weight: 700;
             transition: all 0.3s ease-in-out;
             margin: 0.5rem 0.5rem;
 

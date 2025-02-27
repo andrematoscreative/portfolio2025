@@ -14,12 +14,12 @@
   }
   
   .app__Contact-title-title {
-    font-size: 1.2rem;
+    font-size: 1rem;
     font-weight: 600;
     color: var(--lightGray-color);
     margin-bottom: 50px;
     margin-top: 150px;
-    padding-left: 100px;
+    padding-left: 200px;
 
     @media screen and (max-width: 900px) {
         margin-left: 1rem;
@@ -40,16 +40,18 @@
     padding: 50px;
 
     .app__Contact-content-form {
+        width: 100%;
         display: flex;
         flex-direction: column;
     }
 
     &-form input, textarea {
-        background-color: none;
+        background-color: transparent;
+        width: 100%;
         font-size: 1.3rem;
         height: 72px;
         padding: 20px;
-        border: 2px solid var(--secondary-color);
+        border: 0 1rem 0 solid var(--secondary-color);
         margin-bottom: 50px;
         border-radius: 15px;
 
@@ -57,10 +59,6 @@
           width: 400px;
         }
     }
-
-    &-form textarea {
-      height: 144px;
-  }
 
     &-form button {
         font-size: 1rem;

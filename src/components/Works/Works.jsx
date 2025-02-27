@@ -39,20 +39,12 @@ const Works = () => {
 
           <div className="app__Work-cards-container">
             <div className="app__Work-card">
-              <img src={images.card_2} alt='Plate Perfection restaurant website' />
+              <img src={images.card_2} alt="Plate Perfection restaurant website" className="card-image card-2"/>
               <div className="card-description">Plate Perfection restaurant website...Coming soon...</div>
             </div>
             <div className="app__Work-card">
               <img src={images.card_1} alt='André Matos Creative Branding' />
               <div className="card-description">André Matos Creative Branding...Coming soon...</div>
-            </div>
-            <div className="app__Work-card">
-              <img src={images.card_3} alt='Find my Medical Spot App' />
-              <div className="card-description">Find my Medical Spot App...Coming soon...</div>
-            </div>
-            <div className="app__Work-card">
-              <img src={images.card_3} alt='Find my Medical Spot App' />
-              <div className="card-description">Find my Medical Spot App...Coming soon...</div>
             </div>
             <div className="app__Work-card">
               <img src={images.card_3} alt='Find my Medical Spot App' />

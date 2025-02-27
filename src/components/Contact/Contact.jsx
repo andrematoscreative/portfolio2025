@@ -19,10 +19,9 @@ const Contact = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    // ✅ Check if all fields are filled
     if (!name || !email || !message) {
       alert('Please fill in all fields before sending the message.');
-      return; // Stop the function if any field is empty
+      return;
     }
 
     setLoading(true);
@@ -47,7 +46,6 @@ const Contact = () => {
         setLoading(false);
       });
 
-    // Clear form fields after submission
     setFormData({ name: '', email: '', message: '' });
   };
 
@@ -72,17 +70,20 @@ const Contact = () => {
             {!isFormSubmitted && showForm && (
               <form className="app__Contact-content-form" onSubmit={handleSubmit}>
                 <div>
-                  <input type="text" placeholder="Your Name" name="name" value={name} onChange={handleChangeInput} />
+                  <input type="text" placeholder="Name" name="name" value={name} onChange={handleChangeInput} />
+                  <div className="app__Contact-content-form-line"></div>
                 </div>
                 <div>
-                  <input type="email" placeholder="Your Email" name="email" value={email} onChange={handleChangeInput} />
+                  <input type="email" placeholder="Email" name="email" value={email} onChange={handleChangeInput} />
+                  <div className="app__Contact-content-form-line"></div>
                 </div>
                 <div>
                   <textarea
-                    placeholder="Your Message"
+                    placeholder="Message"
                     value={message}
                     name="message"
                     onChange={handleChangeInput} />
+                    <div className="app__Contact-content-form-line"></div>
                 </div>
                 <button type="submit" disabled={loading}>{loading ? 'Sending...' : 'Send Message'}</button>
               </form>

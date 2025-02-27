@@ -2,7 +2,7 @@
     position: relative; 
     width: 100%;
     user-select: none;
-    background-color: var(--primary-color);
+    background-color: var(--background2-color);
     z-index: 2;
   }
   
@@ -50,8 +50,8 @@
         width: 100%;
         font-size: 1.3rem;
         height: 72px;
-        padding: 20px;
-        border: 0 1rem 0 solid var(--secondary-color);
+        padding: 10px;
+        border: 0  0 1rem solid var(--secondary-color);
         margin-bottom: 50px;
         border-radius: 15px;
 
@@ -65,17 +65,16 @@
         font-weight: 600;
         padding: 10px 20px;
         height: 56px;
-        color: var(--secondary-color);
-        background-color: var(--primary-color);
-        box-shadow: 1px 3px 5px var(--hover-color);
-        border-radius: 20px;
+        color: var(--primary-color);
+        background-color: var(--lightGray-color);
+        border-radius: 5px;
         cursor: pointer;
     }
 
     &-form button:hover {
-        color: var(--primary-color);
+        color: var(--lightGray-color);
         background-color: var(--secondary-color);
-        border: 2px solid var(--primary-color);
+        border: 1px solid var(--primary-color);
         transition: all 0.2s ease-in-out;
     }
 

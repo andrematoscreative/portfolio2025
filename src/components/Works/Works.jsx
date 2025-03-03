@@ -39,8 +39,8 @@ const Works = () => {
 
           <div className="app__Work-cards-container">
             <div className="app__Work-card">
-              <img src={images.card_2} alt="Plate Perfection restaurant website" className="card-image card-2"/>
-              <div className="card-description">Plate Perfection restaurant website...Coming soon...</div>
+              <div className='card-1'>Plate Perfection</div>
+              <div className="card-description">Restaurant website</div>
             </div>
             <div className="app__Work-card">
               <img src={images.card_1} alt='André Matos Creative Branding' />

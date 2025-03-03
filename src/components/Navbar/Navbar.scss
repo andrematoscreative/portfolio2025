@@ -15,6 +15,17 @@
     width: 100%;
     padding: 0 2rem;  
     position: relative;
+
+    @media screen and (max-width: 450px) {
+        a{
+            padding: 0 0.5rem;  
+        }        
+    }
+    @media screen and (max-width: 900px) {
+        a{
+            padding: 0 1rem;  
+        }        
+    }
 }
 
 .app__navbar-logo {

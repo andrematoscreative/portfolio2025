@@ -12,8 +12,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;  
-    width: 100%;
-    padding: 0 1rem;  
+    width: 100%;    
     position: relative;
 
     @media screen and (max-width: 450px) {
@@ -36,35 +35,35 @@
 
     
     a {
-        margin: 3rem 1rem;
+        margin: 2rem 1rem;
         display: flex;
         align-items: center;
         font-size: 1.7rem;
         font-weight: 700;
         color: var(--lightGray-color);
         text-decoration: none;
-        max-width: 80px;
+        max-width: 90px;
         line-height: 25px;
 
         &:hover {
             color: var(--secondary-color);
         }
-    }
+        
+        @media screen and (max-width: 450px) {
+                margin-top:2rem;
+                font-size: 0.8rem;
+                line-height: 15px;
+                color:red;
+                   
+        }
 
-    @media screen and (max-width: 450px) {
-        a{
-            margin: 1rem 0.5rem;
-            font-size: 1rem;
-            line-height: 15px;
+        @media screen and (max-width: 900px) {
+                margin: 2rem 0rem;  
+                font-size: 1.5rem;
+                line-height: 22px;
         }        
     }
-    @media screen and (max-width: 900px) {
-        a{
-            margin: 1rem 0.3rem;    
-            font-size: 1.2rem;
-            line-height: 15px;
-        }        
-    }
+    
 }
 
 .app__navbar-links {

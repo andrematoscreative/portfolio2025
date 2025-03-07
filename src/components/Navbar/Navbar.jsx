@@ -15,7 +15,7 @@ const Navbar = () => {
         const handleScroll = () => {
             const scrollPosition = window.scrollY + 200;
             let currentSection = 'HOME';
-            setIsHome(scrollPosition < 100); // Check if in Home section
+            setIsHome(scrollPosition < 10);
             
             sections.forEach((section) => {
                 const element = document.getElementById(section);

@@ -13,16 +13,16 @@
     justify-content: space-between;
     align-items: center;  
     width: 100%;
-    padding: 0 2rem;  
+    padding: 0 1rem;  
     position: relative;
 
     @media screen and (max-width: 450px) {
-        a{
-            padding: 0 0.5rem;  
+        a {
+            padding: 0 0.1rem;  
         }        
     }
     @media screen and (max-width: 900px) {
-        a{
+        a {
             padding: 0 1rem;  
         }        
     }
@@ -53,7 +53,7 @@
 
     @media screen and (max-width: 450px) {
         a{
-            margin: 1.5rem 0.5rem;
+            margin: 1rem 0.5rem;
             font-size: 1rem;
             line-height: 15px;
         }        

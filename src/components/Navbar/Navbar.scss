@@ -14,62 +14,57 @@
     align-items: center;  
     width: 100%;    
     position: relative;
-
-    @media screen and (max-width: 450px) {
-        a {
-            padding: 0 0.1rem;  
-        }        
-    }
-    @media screen and (max-width: 900px) {
-        a {
-            padding: 0 1rem;  
-        }        
-    }
 }
 
 .app__navbar-logo {
-    cursor: pointer;
     display: flex;
     align-items: center;
     justify-content: center;
-
+    cursor: pointer;
     
     a {
-        margin: 2rem 1rem;
         display: flex;
         align-items: center;
-        font-size: 1.7rem;
+        text-decoration: none;
+        font-size: 2rem;
         font-weight: 700;
         color: var(--lightGray-color);
-        text-decoration: none;
-        max-width: 90px;
-        line-height: 25px;
+        margin: 3rem 4rem;
+        transition: color 0.3s ease-in-out;
+        width : 90px;
+        line-height: 29px;
 
         &:hover {
             color: var(--secondary-color);
         }
-        
-        @media screen and (max-width: 450px) {
-                margin-top:2rem;
-                font-size: 0.8rem;
-                line-height: 15px;
-                color:red;
-                   
-        }
-
-        @media screen and (max-width: 900px) {
-                margin: 2rem 0rem;  
-                font-size: 1.5rem;
-                line-height: 22px;
-        }        
     }
     
+}
+
+@media screen and (max-width: 900px) {
+    .app__navbar-logo 
+        a {
+            margin: 1rem 1rem;            
+        }
+}
+
+@media screen and (max-width: 450px) {
+    .app__navbar-logo {
+        justify-content: flex-start;
+        
+        a {
+            font-size: 1rem;
+            margin: 0.7rem 0.7rem;
+            line-height: 15px;
+        }
+    }
 }
 
 .app__navbar-links {
     display: flex;
     align-items: center;
     list-style: none;
+    margin-right: 4rem;
 
     li {
         margin-left: 60px;
@@ -79,10 +74,9 @@
         a {
             color: var(--lightGray-color);
             text-decoration: none;
-            font-size: 1.15rem;
+            font-size: 1.125rem;
             font-weight: 700;
             transition: all 0.3s ease-in-out;
-            margin: 0.5rem 0.5rem;
 
             &:hover {
                 color: var(--secondary-color);

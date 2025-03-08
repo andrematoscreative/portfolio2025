@@ -18,21 +18,29 @@
     z-index: 2;
     justify-content: center;
     padding-left: 200px;
+
+    @media screen and (max-width: 900px) {
+        padding-left: 50px;
+    }
+
+    @media screen and (max-width: 450px) {
+        padding-left: 30px;
+    }
 }
 
-.app__About-title-title {
+.app__About-title {
     font-size: 1rem;
     font-weight: 600;
     color: var(--lightGray-color);
     margin-bottom: 50px;
 
     @media screen and (max-width: 900px) {
-        margin-left: 1rem;
+        //margin-left: 1rem;
     }
 
     @media screen and (max-width: 450px) {
-        font-size: 2rem;
-        margin-bottom: 8px;
+        font-size: 0.8rem;
+        margin-bottom: 15px;
     }
 }
 
@@ -49,8 +57,10 @@
     }
 
     @media screen and (max-width: 450px) {
-        line-height: 1.8rem;
-        font-size: 1.1rem;
+        font-size: 1.3rem;
+        line-height: 2rem;
+        max-width: 100%;
+        padding-right: 15px;
     }
 }
 

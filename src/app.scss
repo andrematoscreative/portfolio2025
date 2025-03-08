@@ -1,9 +1,7 @@
 .app {
-   
-    font-family: var(--font-base);   
+   font-family: var(--font-base);   
 }
 
-/* Shared Background for Header & About */
 .app__shared-background {
     position: fixed;
     top: 0;
@@ -25,12 +23,6 @@
     margin: 0 auto;
     max-width: 1600px;
     width: 100%;
-}
-
-.app__flex {
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 

@@ -19,16 +19,15 @@ const About = () => {
 
   return (
     <div className='app__About' id='ABOUT'>
-      <div className='app__master-container app_flex'>
+      <div className='app__master-container'>
         <div className='app__About-info'> 
 
-          <div className='app__About-title'>
-            <motion.div
-            whileInView={{ x: [-90, 0], opacity: [0,1] }}
+          
+            <motion.div whileInView={{ x: [-90, 0], opacity: [0,1] }}
             transition={{ duration: 0.5 }}
-            className='app__About-title-title'>ABOUT</motion.div>
+            className='app__About-title'>ABOUT</motion.div>
 
-          </div>
+          
           <div className='app__About-desc'>
                   <div className='app__About-desc-container-text ' ref={textRef}>
                       {/* <p>Tech enthusiast exploring the ever-evolving world of design,software development, and emerging technologies. Constantly striving for creative excellence.</p>

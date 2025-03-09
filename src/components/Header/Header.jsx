@@ -17,13 +17,13 @@ const Header = () => {
 
   return (
     <div className="app__header" id="HOME" data-scroll-section>
-      <div className="app__master-container app__flex app__header-container">
+      <div className="app__master-container app__header-container">
+        
         <h1 
           className="app__header-head-text" 
           ref={textRef}
           data-scroll
-          data-scroll-speed="2"  // 🔹 Locomotive smooth scrolling effect
-        >
+          data-scroll-speed="2">
           <span className="light-gray">Hello, I'm a</span>
           <div data-scroll data-scroll-speed="1.5">software web </div>
           <div data-scroll data-scroll-speed="1.2">developer</div>
@@ -34,6 +34,7 @@ const Header = () => {
             for technology.
           </span>
         </h1>
+
       </div>
     </div>
   );

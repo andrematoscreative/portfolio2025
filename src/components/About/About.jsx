@@ -34,9 +34,10 @@ const About = () => {
                         <p>Creating experiences that are both beautiful and functional. Constantly learning and pushing the boundaries of web development.</p>
                         <b>Let's work on your vision!</b>
                     <p>I'm proficient in a variety of programming languages, including HTML, CSS, JavaScript, and I'm always eager to learn new ones.</p><p> Above all, I'm a person who is constantly fascinated by the ways in which technology can transform the world we live in.</p><b>Let's connect and see how we can bring your ideas to life!</b> */}
-                    <div>Avid explorer of design, software, and emerging tech. I craft stunning and functional experiences, always pushing web development boundaries. </div>
-                    <div>Proficient in HTML, CSS, JavaScript and always eager to learn more.</div>
-                    <div> Fascinated by technology's transformative power.</div>
+                    <span className="light-gray">Avid explorer of design, software, and emerging tech. I craft stunning and functional experiences, always pushing web development boundaries.</span>
+                    <div> Proficient in HTML, CSS, JavaScript and always eager to learn more.</div>
+                    <span className="light-gray">Fascinated by technology's transformative power.</span>
+                    <div className= 'app__About-desc-container-text-secondary' >Tech enthusiast exploring the ever-evolving world of design,software development, and emerging technologies. Constantly striving for creative excellence.</div>                    
                   </div>
                   <motion.div
                   whileInView={{ y: [-25, 0], opacity: [0,1] }}

@@ -27,7 +27,7 @@
     font-weight: 600;
     color: var(--lightGray-color);
     margin-bottom: 100px;
-    margin-top: 160px;
+    padding-top: 10rem;
     padding-left: 200px;
     z-index: 3;
 
@@ -38,7 +38,7 @@
 
     @media screen and (max-width: 450px) {
         padding-left: 1.5rem;
-        padding-top: 4rem;
+        padding-top: 8rem;
         font-size: 0.6rem;
         margin-bottom: 15px;
     }

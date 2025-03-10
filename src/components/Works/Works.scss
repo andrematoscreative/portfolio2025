@@ -32,15 +32,18 @@
     z-index: 3;
 
   @media screen and (max-width: 900px) {
-      margin-left: 1rem;
-  }
+        padding-left: 3rem;
+        font-size: 0.8rem;
+    }
 
-  @media screen and (max-width: 450px) {
-      font-size: 2rem;
-      margin-bottom: 8px;
-      margin-top: 100px;
-  }
+    @media screen and (max-width: 450px) {
+        padding-left: 1.5rem;
+        padding-top: 4rem;
+        font-size: 0.6rem;
+        margin-bottom: 15px;
+    }
 }
+
 
 .app__Work-cards-container {
   display: flex;
@@ -61,11 +64,6 @@
   overflow: hidden;
   border-top:  1px solid var(--darkGray-color);
   border-bottom:  1px solid var(--darkGray-color);
-
-  @media screen and (max-width: 450px) {
-      width: 380px;
-      height: 200px;
-  }
 }
 
 .app__Work-card {
@@ -77,6 +75,7 @@
   flex-direction: column;
   transition: transform 2s cubic-bezier(0.25, 1, 0.5, 1);
   z-index: 2;
+  
 }
 
 .card-1{
@@ -84,11 +83,20 @@
   font-weight: 700;
   color: var(--lightGray-color);
   margin-left: 200px;
+
+  @media screen and (max-width: 450px) {
+    font-size: 2rem;
+    margin-left: 1.5rem;
+  }
 }
 
 .card-description{
   margin-left: 200px;
-  color: var(--lightGray-color)
+  color: var(--lightGray-color);
+
+  @media screen and (max-width: 450px) {
+    margin-left: 1.5rem;
+  }
 }
 
 .app__Work-card:hover .card-1 {

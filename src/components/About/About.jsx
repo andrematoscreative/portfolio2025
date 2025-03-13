@@ -1,8 +1,7 @@
-import React, { useState, useEffect, useRef } from 'react'
+import React, { useEffect, useRef } from 'react';
 import { motion } from 'framer-motion';
 import gsap from 'gsap';
-import { images } from '../../constants';
-import { BsGithub,BsLinkedin } from 'react-icons/bs';
+import { BsGithub, BsLinkedin } from 'react-icons/bs';
 import { SiWakatime } from 'react-icons/si';
 import './About.scss';
 
@@ -11,52 +10,58 @@ const About = () => {
 
   useEffect(() => {
     const textLines = textRef.current.children;
-    gsap.fromTo(textLines, 
-      { opacity: 0, y:25 }, 
+    gsap.fromTo(
+      textLines,
+      { opacity: 0, y: 25 },
       { opacity: 1, y: 0, stagger: 0.4, duration: 0.7, ease: 'power2.out' }
     );
   }, []);
 
   return (
-    <div className='app__About' id='ABOUT'>
-      <div className='app__master-container'>
-        <div className='app__About-info'> 
+    <section className='about' id='ABOUT'>
+      <motion.h2 
+        whileInView={{ x: [-90, 0], opacity: [0, 1] }}
+        transition={{ duration: 0.5 }}
+        className='about__title'
+      >
+        ABOUT
+      </motion.h2>
 
-          
-            <motion.div whileInView={{ x: [-90, 0], opacity: [0,1] }}
-            transition={{ duration: 0.5 }}
-            className='app__About-title'>ABOUT</motion.div>
+      <article className='about__content'>
+        <p ref={textRef} className='about__text'>
+          <span className="light-gray">
+            Avid explorer of design, software, and emerging tech. I craft stunning and functional experiences, always pushing web development boundaries.
+          </span>
+          <br />
+          Proficient in HTML, CSS, JavaScript and always eager to learn more.
+          <br />
+          <span className="light-gray">
+            Fascinated by technology's transformative power.
+          </span>
+          <br />
+          <span className='about__text-secondary'>
+            Tech enthusiast exploring the ever-evolving world of design, software development, and emerging technologies. Constantly striving for creative excellence.
+          </span>
+        </p>
 
-          
-          <div className='app__About-desc'>
-                  <div className='app__About-desc-container-text ' ref={textRef}>
-                      {/* <p>Tech enthusiast exploring the ever-evolving world of design,software development, and emerging technologies. Constantly striving for creative excellence.</p>
-                        <p>Creating experiences that are both beautiful and functional. Constantly learning and pushing the boundaries of web development.</p>
-                        <b>Let's work on your vision!</b>
-                    <p>I'm proficient in a variety of programming languages, including HTML, CSS, JavaScript, and I'm always eager to learn new ones.</p><p> Above all, I'm a person who is constantly fascinated by the ways in which technology can transform the world we live in.</p><b>Let's connect and see how we can bring your ideas to life!</b> */}
-                    <span className="light-gray">Avid explorer of design, software, and emerging tech. I craft stunning and functional experiences, always pushing web development boundaries.</span>
-                    <div> Proficient in HTML, CSS, JavaScript and always eager to learn more.</div>
-                    <span className="light-gray">Fascinated by technology's transformative power.</span>
-                    <div className= 'app__About-desc-container-text-secondary' >Tech enthusiast exploring the ever-evolving world of design,software development, and emerging technologies. Constantly striving for creative excellence.</div>                    
-                  </div>
-                  <motion.div
-                  whileInView={{ y: [-25, 0], opacity: [0,1] }}
-                  transition={{ duration: 0.5, delay:0.4}} className='app__About-desc-container-icons'>
-                      <a className="app__About-desc-container-linkedin" href="https://linkedin.com/in/andrematoscreative"target="_blank">
-                      <BsLinkedin/>
-                      </a>
-                      <a className="app__About-container-git"href="https://github.com/andrematoscreative" target="_blank">
-                      <BsGithub/>
-                      </a>
-                      <a className="app__About-container-connections-wakatime"href="https://wakatime.com/@andrematoscreative"target="_blank">
-                      <SiWakatime/>
-                      </a>
-                  </motion.div> 
-          </div>
-        </div>
-      </div>
-    </div>
-  )
-}
+        <motion.nav
+          whileInView={{ y: [-25, 0], opacity: [0, 1] }}
+          transition={{ duration: 0.5, delay: 0.4 }}
+          className='about__icons'
+        >
+          <a href="https://linkedin.com/in/andrematoscreative" target="_blank" className="about__icon">
+            <BsLinkedin />
+          </a>
+          <a href="https://github.com/andrematoscreative" target="_blank" className="about__icon">
+            <BsGithub />
+          </a>
+          <a href="https://wakatime.com/@andrematoscreative" target="_blank" className="about__icon">
+            <SiWakatime />
+          </a>
+        </motion.nav>
+      </article>
+    </section>
+  );
+};
 
 export default About;

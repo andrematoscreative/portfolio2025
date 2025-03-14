@@ -28,14 +28,11 @@ const Works = () => {
       {/* Parallax Background */}
       <div ref={backgroundRef} className='app__Work-background'></div>
 
-      <div className='app__master-container'>
-        <div className='app__Work-info'>
-          <div className='app__Work-title'>
+        <div className='app__Work-info app__master-container'>
           <motion.div
             whileInView={{ x: [-90, 0], opacity: [0,1] }}
             transition={{ duration: 0.5 }}
-            className='app__Work-title-title'>WORK</motion.div>
-          </div>
+            className='app__Work-title'>WORK</motion.div>
 
           <div className="app__Work-cards-container">
             <div className="app__Work-card">
@@ -56,7 +53,6 @@ const Works = () => {
             </div>
           </div>
         </div>
-      </div>
     </div>
   );
 };

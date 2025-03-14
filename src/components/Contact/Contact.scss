@@ -1,4 +1,4 @@
-.app__Contact {
+.app__contact {
     position: relative; 
     width: 100%;
     user-select: none;
@@ -6,14 +6,14 @@
     z-index: 2;
   }
   
-  .app__Contact-info {
+  .app__contact-info {
     display: flex;
     flex-direction: column;
     justify-content: center;
     min-height: 100vh;
   }
   
-  .app__Contact-title-title {
+  .app__contact-title {
     font-size: 1rem;
     font-weight: 600;
     color: var(--lightGray-color);
@@ -32,14 +32,14 @@
     }
   }
 
-.app__Contact-content {
+.app__contact-content {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
     padding: 50px;
 
-    .app__Contact-content-form {
+    .app__contact-content-form {
         width: 100%;
         display: flex;
         flex-direction: column;
@@ -64,7 +64,7 @@
         }
     }
 
-    .app__Contact-content-form-line{
+    .app__contact-content-form-line{
       height: 1px;
       background-color: var(--darkGray-color);
       margin-bottom: 60px;
@@ -93,7 +93,7 @@
       padding: 10px;
     }
 
-  .app__Contact-content-form-message{
+  .app__contact-content-form-message{
     color: var(--secondary-color);
     font-size: 2.5rem;
     

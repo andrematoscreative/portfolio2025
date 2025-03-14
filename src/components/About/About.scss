@@ -1,4 +1,4 @@
-.about {
+.app__about {
     position: relative;
     width: 100%;
     min-height: 100vh;
@@ -20,7 +20,7 @@
     }
 }
 
-.about__title {
+.app__about-title {
     font-size: 1rem;
     font-weight: 600;
     color: var(--lightGray-color);
@@ -38,7 +38,7 @@
     }
 }
 
-.about__content {
+.app__about-content {
     max-width: 600px;
     text-align: left;
     line-height: 3rem;
@@ -54,7 +54,7 @@
     }
 }
 
-.about__text-secondary {
+.app__about-text-secondary {
     display: block;
     padding-top: 2rem;
     line-height: 2rem;
@@ -63,7 +63,7 @@
     color: var(--lightGray-color);
 }
 
-.about__icons {
+.app__about-icons {
     margin-top: 50px;
     display: flex;
     gap: 20px;
@@ -73,7 +73,7 @@
     }
 }
 
-.about__icon {
+.app__about-icon {
     font-size: 27px;
     color: var(--lightGray-color);
     transition: color 0.3s ease-in-out;

@@ -50,32 +50,29 @@ const Contact = () => {
   };
 
   return (
-    <div className='app__Contact' id='CONTACT'>
-      <div className='app__master-container'>
-        <div className='app__Contact-info'>
-          <div className='app__Contact-title '>
+    <div className='app__contact app__master-container' id='c'>
+        <div className='app__contact-info'>
             <motion.div
               whileInView={{ x: [-100, 0], opacity: [0, 1] }}
               transition={{ duration: 1 }}
-              className='app__Contact-title-title'>
+              className='app__contact-title'>
               CONTACT
             </motion.div>
-          </div>
 
           <motion.div
             whileInView={{ y: [-30, 0], opacity: [0,1] }}
             transition={{ duration: 1.5 }} 
-            className='app__Contact-content'>
+            className='app__contact-content'>
             
             {!isFormSubmitted && showForm && (
-              <form className="app__Contact-content-form" onSubmit={handleSubmit}>
+              <form className="app__contact-content-form" onSubmit={handleSubmit}>
                 <div>
                   <input type="text" placeholder="Name" name="name" value={name} onChange={handleChangeInput} />
-                  <div className="app__Contact-content-form-line"></div>
+                  <div className="app__contact-content-form-line"></div>
                 </div>
                 <div>
                   <input type="email" placeholder="Email" name="email" value={email} onChange={handleChangeInput} />
-                  <div className="app__Contact-content-form-line"></div>
+                  <div className="app__contact-content-form-line"></div>
                 </div>
                 <div>
                   <textarea
@@ -83,7 +80,7 @@ const Contact = () => {
                     value={message}
                     name="message"
                     onChange={handleChangeInput} />
-                    <div className="app__Contact-content-form-line"></div>
+                    <div className="app__contact-content-form-line"></div>
                 </div>
                 <button type="submit" disabled={loading}>{loading ? 'Sending...' : 'Send Message'}</button>
               </form>
@@ -91,14 +88,13 @@ const Contact = () => {
 
             {isFormSubmitted && (
               <div>
-                <h3 className="app__Contact-content-form-message">
+                <h3 className="app__contact-content-form-message">
                   Thank you for getting in touch!
                 </h3>
               </div>
             )}
           </motion.div>
         </div>
-      </div>
     </div>
   );
 };

@@ -27,8 +27,9 @@
 
     @media screen and (max-width: 450px) {
       font-size: 0.6rem;
-      margin-bottom: 15px;
+      margin-bottom: 35px;
       margin-top: 80px;
+      padding-left: 1.2rem;
     }
   }
 
@@ -52,7 +53,7 @@
         height: 72px;
         padding: 10px;
         border: solid transparent;
-        color: var(--secondary-color);
+        color: var(--lightGray-color);
 
         @media screen and (max-width: 900px) {
           padding-left: 1rem;

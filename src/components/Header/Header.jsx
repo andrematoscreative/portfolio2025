@@ -17,7 +17,7 @@ const Header = () => {
 
   return (
     <div className="app__header" id="HOME" data-scroll-section>
-      <div className="app__master-container app__header-container">
+      <div className="app__header-container app__master-container">
         
         <h1 
           className="app__header-head-text" 

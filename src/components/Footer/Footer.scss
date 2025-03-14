@@ -31,10 +31,12 @@
     color: var(--lightGray-color);
     font-size: 0.8rem;
     padding-top: 10px;
+    padding-bottom: 10px;
 
     @media screen and (max-width: 450px) {
       font-size: 0.65rem;
       flex-direction: column;
+      padding-bottom:0px;
     }
 }
 

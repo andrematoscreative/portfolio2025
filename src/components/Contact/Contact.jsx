@@ -50,8 +50,8 @@ const Contact = () => {
   };
 
   return (
-    <div className='app__contact app__master-container' id='c'>
-        <div className='app__contact-info'>
+    <div className='app__contact' id='CONTACT'>
+        <div className='app__contact-info app__master-container'>
             <motion.div
               whileInView={{ x: [-100, 0], opacity: [0, 1] }}
               transition={{ duration: 1 }}

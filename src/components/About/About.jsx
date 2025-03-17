@@ -1,23 +1,29 @@
-import React, { useEffect, useRef } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import { motion } from 'framer-motion';
 import gsap from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { BsGithub, BsLinkedin } from 'react-icons/bs';
 import './About.scss';
 
+gsap.registerPlugin(ScrollTrigger);
+
 const About = () => {
-  const textRef = useRef(null);
+  const aboutRef = useRef(null);
+  const [isDarkened, setIsDarkened] = useState(false);
 
   useEffect(() => {
-    const textLines = textRef.current.children;
-    gsap.fromTo(
-      textLines,
-      { opacity: 0, y: 25 },
-      { opacity: 1, y: 0, stagger: 0.4, duration: 0.7, ease: 'power2.out' }
-    );
+    ScrollTrigger.create({
+      trigger: "#WORK",
+      start: "top 60%",
+      end: "top 40%",
+      scrub: 1,
+      onEnter: () => setIsDarkened(true),
+      onLeaveBack: () => setIsDarkened(false),
+    });
   }, []);
 
   return (
-    <section className='app__about' id='ABOUT'>
+    <section className={`app__about ${isDarkened ? 'darkened' : ''}`} id='ABOUT' ref={aboutRef}>
       <div className='app__about-info app__master-container'>
         <motion.h2 
           whileInView={{ x: [-90, 0], opacity: [0, 1] }}
@@ -28,7 +34,7 @@ const About = () => {
         </motion.h2>
 
         <article className='app__about-content'>
-          <p ref={textRef} className='app__about-text'>
+          <p className='app__about-text'>
             <span className="light-gray">
               Avid explorer of design, software, and emerging tech. I craft stunning and functional experiences, always pushing web development boundaries.
             </span>

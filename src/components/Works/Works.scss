@@ -56,30 +56,23 @@
 }
 
 .app__Work-card {
-  //padding: 10px;
   cursor: pointer;
   position: relative;
-  width: 100%;
-  height: 250px;
-  margin: 16px;
-  overflow: hidden;
-  border-top:  1px solid var(--darkGray-color);
-  border-bottom:  1px solid var(--darkGray-color);
-}
-
-.app__Work-card {
   width: 100%;
   height: 250px;
   object-fit: cover;
   display: flex;
   justify-content: center;
   flex-direction: column;
+  overflow: hidden;
+  border-top:  1px solid var(--darkGray-color);
+  border-bottom:  1px solid var(--darkGray-color);
   transition: transform 2s cubic-bezier(0.25, 1, 0.5, 1);
   z-index: 2;
-  
+  margin: 20px
 }
 
-.card-1 {
+.card-title {
   font-size: 3rem;
   font-weight: 700;
   color: var(--lightGray-color);
@@ -100,22 +93,13 @@
   }
 }
 
-.app__Work-card:hover .card-1 {
+.app__Work-card:hover .card-title {
   content: url('../../assets/card_2hover.png');
   transform: scale(1.06);
   z-index: 3;
   
 }
 
-/*
-.app__Work-card:hover .card-image {
-  transform: scale(1.08);
-}
-
-.app__Work-card:hover .card-description {
-  transform: translateY(0);
-}
-*/
 .app__Work-background {
   position: absolute;
   top: 0;

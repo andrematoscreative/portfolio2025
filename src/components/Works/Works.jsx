@@ -12,20 +12,20 @@ const Works = () => {
 
   useEffect(() => {
     gsap.to(backgroundRef.current, {
-      y: '-20%', // Moves background upwards (adjust this for stronger effect)
+      y: '-20%',
       ease: 'power1.out',
       scrollTrigger: {
         trigger: '.app__Work',
         start: 'top bottom',
         end: 'bottom top',
-        scrub: 1, // Smooth scroll effect
+        scrub: 1,
       },
     });
   }, []);
 
   return (
     <div className='app__Work' id='WORK'>
-      {/* Parallax Background */}
+
       <div ref={backgroundRef} className='app__Work-background'></div>
 
         <div className='app__Work-info app__master-container'>
@@ -36,20 +36,20 @@ const Works = () => {
 
           <div className="app__Work-cards-container">
             <div className="app__Work-card">
-              <div className='card-1'>Plate Perfection</div>
+              <div className='card-title'>Plate Perfection</div>
               <div className="card-description">Restaurant website</div>
             </div>
             <div className="app__Work-card">
-              <img src={images.card_1} alt='André Matos Creative Branding' />
-              <div className="card-description">André Matos Creative Branding...Coming soon...</div>
+              <div className='card-title'>Plate Perfection</div>
+              <div className="card-description">André Matos Creative Branding</div>
             </div>
             <div className="app__Work-card">
-              <img src={images.card_3} alt='Find my Medical Spot App' />
-              <div className="card-description">Find my Medical Spot App...Coming soon...</div>
+              <div className='card-title'>Plate Perfection</div>
+              <div className="card-description">Find my Medical Spot App</div>
             </div>
             <div className="app__Work-card">
-              <img src={images.card_3} alt='Find my Medical Spot App' />
-              <div className="card-description">Find my Medical Spot App...Coming soon...</div>
+              <div className='card-title'>Plate Perfection</div>
+              <div className="card-description">Find my Medical Spot App</div>
             </div>
           </div>
         </div>

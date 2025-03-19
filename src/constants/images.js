@@ -6,6 +6,8 @@ import card_2 from '../assets/card_2.png';
 import card_3 from '../assets/card_3.png';
 import work_background from '../assets/work_background.png';
 import card_2hover from '../assets/card_2hover.png';
+import card_1hover from '../assets/card_1hover.png';
+import card_3hover from '../assets/card_3hover.png';
 
 
 
@@ -18,4 +20,6 @@ export default {
   card_3,
   work_background,
   card_2hover,
+  card_1hover,
+  card_3hover,
 };

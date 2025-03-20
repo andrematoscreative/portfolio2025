@@ -25,13 +25,13 @@
     
     a {
         text-decoration: none;
-        font-size: 2rem;
+        font-size: 1.5rem;
         font-weight: 700;
         color: var(--lightGray-color);
         margin: 3rem 4rem;
         transition: color 0.3s ease-in-out;
         width : 90px;
-        line-height: 29px;
+        line-height: 22px;
 
         &:hover {
             color: var(--secondary-color);
@@ -42,16 +42,16 @@
 @media screen and (max-width: 900px) {
     .app__navbar-logo 
     a {
-        font-size: 1.7rem;
+        font-size: 1.4rem;
         margin: 1.5rem 1.5rem;
-        line-height: 25px; 
+        line-height: 21px; 
     }
 }
 
 @media screen and (max-width: 450px) {
     .app__navbar-logo 
     a {
-        font-size: 1.2rem;
+        font-size: 1.1rem;
         margin: 1.2rem 1.2rem;
         line-height: 17px;
     }
@@ -71,7 +71,7 @@
         a {
             color: var(--lightGray-color);
             text-decoration: none;
-            font-size: 1.125rem;
+            font-size: 1rem;
             font-weight: 700;
             transition: all 0.3s ease-in-out;
 

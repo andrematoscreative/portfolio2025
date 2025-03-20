@@ -4,10 +4,9 @@ import logo from '../assets/logo.png';
 import card_1 from '../assets/card_1.png';
 import card_2 from '../assets/card_2.png';
 import card_3 from '../assets/card_3.png';
+import card_4 from '../assets/card_4.png';
 import work_background from '../assets/work_background.png';
-import card_2hover from '../assets/card_2hover.png';
-import card_1hover from '../assets/card_1hover.png';
-import card_3hover from '../assets/card_3hover.png';
+
 
 
 
@@ -18,8 +17,7 @@ export default {
   card_1,
   card_2,
   card_3,
+  card_4,
   work_background,
-  card_2hover,
-  card_1hover,
-  card_3hover,
+
 };

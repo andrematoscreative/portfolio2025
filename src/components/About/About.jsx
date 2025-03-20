@@ -25,13 +25,12 @@ const About = () => {
   return (
     <section className={`app__about ${isDarkened ? 'darkened' : ''}`} id='ABOUT' ref={aboutRef}>
       <div className='app__about-info app__master-container'>
-        <motion.h2 
-          whileInView={{ x: [-90, 0], opacity: [0, 1] }}
-          transition={{ duration: 0.5 }}
-          className='app__about-title'
-        >
+        <motion.div 
+          whileInView={{ x: [-100, 0], opacity: [0, 1] }}
+          transition={{ duration: 1 }}
+          className='app__about-title'>
           ABOUT
-        </motion.h2>
+        </motion.div>
 
         <article className='app__about-content'>
           <p className='app__about-text'>

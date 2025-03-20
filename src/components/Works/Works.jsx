@@ -24,7 +24,7 @@ const Works = () => {
   }, []);
 
   const workItems = [
-    { title: 'PLATE PERFECTION', description: 'Restaurant website', bg: images.card_1, link: '/work/plate-perfection' },
+    { title: 'PLATE PERFECTION', description: 'Restaurant website', bg: images.card_1, link: '/Work_pages/Work_plate_perfection' },
     { title: 'CREATIVE BRANDING', description: 'André Matos Creative Branding', bg: images.card_2, link: '/work/branding' },
     { title: 'MEDICAL APP', description: 'Find my Medical Spot App', bg: images.card_3, link: '/work/medical-app' },
     { title: 'E-COMMERCE WEBSITE', description: 'Online retail store', bg: images.card_4, link: '/work/ecommerce' }
@@ -38,7 +38,7 @@ const Works = () => {
         <motion.div
         whileInView={{ x: [-100, 0], opacity: [0, 1] }}
         transition={{ duration: 1 }}
-        className='app__contact-title'>
+        className='app__Work-title'>
         WORK
         </motion.div>
 

@@ -17,12 +17,13 @@
     font-size: 1rem;
     font-weight: 600;
     color: var(--lightGray-color);
-    margin-bottom: 50px;
+    margin-bottom: 100px;
     margin-top: 90px;
     padding-left: 200px;
 
     @media screen and (max-width: 900px) {
-      padding-left: 1rem;
+      padding-left: 3rem;
+      font-size: 0.8rem;
     }
 
     @media screen and (max-width: 450px) {
@@ -38,7 +39,8 @@
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
-    padding: 50px;
+    padding-left: 200px;
+    padding-right: 200px;
 
     .app__contact-content-form {
         width: 100%;

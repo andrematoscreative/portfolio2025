@@ -1,6 +1,7 @@
 import React, { useEffect, useRef } from 'react';
 import gsap from 'gsap';
-import { ScrollTrigger } from 'gsap/ScrollTrigger'; 
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import { motion } from 'framer-motion'; 
 import { images } from '../../constants';
 import './Works.scss';
 
@@ -34,7 +35,12 @@ const Works = () => {
       <div ref={backgroundRef} className='app__Work-background'></div>
 
       <div className='app__Work-info app__master-container'>
-        <div className='app__Work-title'>WORK</div>
+        <motion.div
+        whileInView={{ x: [-100, 0], opacity: [0, 1] }}
+        transition={{ duration: 1 }}
+        className='app__contact-title'>
+        WORK
+        </motion.div>
 
         <div className="app__Work-cards-container">
           {workItems.map((work, index) => (

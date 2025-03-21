@@ -5,8 +5,8 @@ const Work_1 = () => {
   return (
     <div className='app__work1'>
       <div className='app__work1-content'>
-          <h1>Plate Perfection Project</h1>
-          <p>This is the work page for Plate Perfection.</p>
+          <div className='app__work1-content-title'>Plate Perfection Project</div>
+          <div className='app__work1-content-description'>This is the work page for Plate Perfection.</div>
       </div>
     </div>
   );

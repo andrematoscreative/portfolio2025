@@ -50,8 +50,8 @@ const About = () => {
           </p>
 
           <motion.nav
-            whileInView={{ y: [-25, 0], opacity: [0, 1] }}
-            transition={{ duration: 0.5, delay: 0.4 }}
+            whileInView={{ y: [-50, 0], opacity: [0, 1] }}
+            transition={{ duration: 0.7, delay: 0.2 }}
             className='app__about-icons'
           >
             <a href="https://linkedin.com/in/andrematoscreative" target="_blank" className="app__about-icon">

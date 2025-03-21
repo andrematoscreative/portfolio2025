@@ -3,6 +3,7 @@ import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { motion } from 'framer-motion'; 
 import { images } from '../../constants';
+import { Link } from 'react-router-dom';
 import './Works.scss';
 
 gsap.registerPlugin(ScrollTrigger);
@@ -24,11 +25,12 @@ const Works = () => {
   }, []);
 
   const workItems = [
-    { title: 'PLATE PERFECTION', description: 'Restaurant website', bg: images.card_1, link: '/Work_pages/Work_plate_perfection' },
-    { title: 'CREATIVE BRANDING', description: 'André Matos Creative Branding', bg: images.card_2, link: '/work/branding' },
-    { title: 'MEDICAL APP', description: 'Find my Medical Spot App', bg: images.card_3, link: '/work/medical-app' },
+    { title: 'PLATE PERFECTION', description: 'Restaurant website', bg: images.card_1, link: '/work/work_1' },
+    { title: 'CREATIVE BRANDING', description: 'André Matos Creative Branding', bg: images.card_2, link: '/work/work_2' }, // ✅ Fix: lowercase URL
+    { title: 'MEDICAL APP', description: 'Find my Medical Spot App', bg: images.card_3, link: '/work/work_3' },
     { title: 'E-COMMERCE WEBSITE', description: 'Online retail store', bg: images.card_4, link: '/work/ecommerce' }
-  ];
+  ];  
+  
 
   return (
     <div className='app__Work' id='WORK'>
@@ -44,13 +46,13 @@ const Works = () => {
 
         <div className="app__Work-cards-container">
           {workItems.map((work, index) => (
-            <a href={work.link} key={index} className="app__Work-card-wrapper">
+            <Link to={work.link} key={index} className="app__Work-card-wrapper">
               <div className="app__Work-card">
                 <div className="card-background" style={{ backgroundImage: `url(${work.bg})` }}></div>
                 <div className="card-title">{work.title}</div>
                 <div className="card-description">{work.description}</div>
               </div>
-            </a>
+            </Link>
           ))}
         </div>
       </div>

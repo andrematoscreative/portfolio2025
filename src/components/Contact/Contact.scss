@@ -39,13 +39,24 @@
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
-    padding-left: 200px;
-    padding-right: 200px;
+
 
     .app__contact-content-form {
         width: 100%;
         display: flex;
         flex-direction: column;
+        padding-left: 200px;
+        padding-right: 200px;
+
+        @media screen and (max-width: 900px) {
+          padding-left: 45px;
+          padding-right: 45px;
+        }
+
+        @media screen and (max-width: 450px) {
+          padding-left: 10px;
+          padding-right: 10px;
+        }
     }
 
     &-form input, textarea {
@@ -58,7 +69,7 @@
         color: var(--lightGray-color);
 
         @media screen and (max-width: 900px) {
-          padding-left: 1rem;
+          padding-left: 0rem;
         }
     
         @media screen and (max-width: 450px) {
@@ -80,7 +91,7 @@
         height: 56px;
         color: var(--lightGray-color);
         background-color: var(--background2-color);
-        border: 1px solid var(--darkGray-color);
+        border: 1px solid var(--secondary-color);
         border-radius: 5px;
         cursor: pointer;
     }

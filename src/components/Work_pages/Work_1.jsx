@@ -1,6 +1,7 @@
 import React from 'react';
+import './Work_1.scss'
 
-const WorkPlatePerfection = () => {
+const Work_1 = () => {
   return (
     <div>
       <h1>Plate Perfection Project</h1>
@@ -9,4 +10,4 @@ const WorkPlatePerfection = () => {
   );
 };
 
-export default WorkPlatePerfection;
+export default Work_1;

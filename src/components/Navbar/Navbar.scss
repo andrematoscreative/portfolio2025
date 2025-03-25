@@ -28,7 +28,7 @@
         font-weight: 700;
         color: var(--lightGray-color);
         transition: color 0.7s ease-in-out;
-        width: 105px;
+        width: 125px;
         line-height: 22px;
         padding: 2rem 2rem;
 
@@ -56,7 +56,7 @@
     .app__navbar-logo 
     a {
         font-size: 1.1rem;
-        padding: 1.4rem 1.4rem;
+        padding: 1.4rem 1.2rem;
         line-height: 17px;
     }
 }
@@ -154,7 +154,7 @@
 
         @media screen and (max-width: 900px) {
             width: 45px;
-            padding-right: 1rem;             
+            padding-right: 0.6rem;             
         }
         
         @media screen and (max-width: 450px) {            

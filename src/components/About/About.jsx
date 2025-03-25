@@ -35,17 +35,14 @@ const About = () => {
         <article className='app__about-content'>
           <p className='app__about-text'>
             <span className="light-gray">
-              Avid explorer of design, software, and emerging tech. I craft stunning and functional experiences, always pushing web development boundaries.
+            I’m a Portugal-based software developer with a background in IT and multimedia.
             </span>
             <br />
-            Proficient in HTML, CSS, JavaScript and always eager to learn more.
-            <br />
-            <span className="light-gray">
-              Fascinated by technology's transformative power.
-            </span>
+            I work with JavaScript, Python, C#, and Java, using tools like React, Node, and .NET.
             <br />
             <span className='app__about-text-secondary'>
-              Tech enthusiast exploring the ever-evolving world of design, software development, and emerging technologies. Constantly striving for creative excellence.
+            I enjoy turning ideas into clean, functional digital experiences — focused on performance, usability, and real-world problem solving.
+            I’ve worked on web design and scalable app projects, always learning and using technology to create meaningful user experiences.
             </span>
           </p>
 

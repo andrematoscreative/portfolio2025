@@ -28,10 +28,7 @@ const Header = () => {
           <div data-scroll data-scroll-speed="1.5">software web </div>
           <div data-scroll data-scroll-speed="1.2">developer</div>
           <span className="light-gray" data-scroll data-scroll-speed="1">
-            with a passion
-          </span>
-          <span className="light-gray" data-scroll data-scroll-speed="0.8">
-            for technology.
+          Turning ideas into code.
           </span>
         </h1>
 

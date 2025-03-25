@@ -18,6 +18,7 @@
 
 
 .app__about-info {
+    overflow-y: auto;
     display: flex;
     min-height: 100vh;
     flex-direction: column;
@@ -49,35 +50,46 @@
 }
 
 .app__about-content {
-    width: 800px;
+    max-width: 70%;
     text-align: left;
     line-height: 3rem;
     font-size: 2rem;
     font-weight: 700;
     padding-left: 200px;
     color: var(--secondary-color);
-
+  
     @media screen and (max-width: 900px) {
+        max-width: 90%;
+        font-size: 1.6rem;
+        line-height: 2.5rem;
         padding-left: 3rem;
-        width: 650px;
     }
-
+  
     @media screen and (max-width: 450px) {
-        font-size: 1.3rem;
-        line-height: 2rem;
-        padding-right: 15px;
-        padding-left: 1.2rem;
-        width: 390px;
+        max-width: 100%;
+      font-size: 1.3rem;
+      line-height: 2rem;
+      padding: 0 1.2rem;
     }
-}
+  }
 
 .app__about-text-secondary {
     display: block;
+    max-width: 100%;
     padding-top: 2rem;
-    line-height: 2rem;
+    line-height: 2.3rem;
     font-size: 1.3rem;
     font-weight: 600;
     color: var(--lightGray-color);
+
+    @media screen and (max-width: 900px) {
+        
+    }
+
+    @media screen and (max-width: 450px) {
+        font-size: 0.9rem;
+        line-height: 1.7rem;
+    }
 }
 
 .app__about-icons {

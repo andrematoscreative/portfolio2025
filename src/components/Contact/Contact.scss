@@ -60,6 +60,8 @@
     }
 
     &-form input, textarea {
+        font-family: 'Poppins', sans-serif;
+        font-weight: 500;
         background-color: transparent;
         width: 100%;
         font-size: 1.4rem;
@@ -67,7 +69,7 @@
         padding: 10px;
         border: solid transparent;
         color: var(--lightGray-color);
-
+        
         @media screen and (max-width: 900px) {
           padding-left: 0rem;
         }

@@ -3,4 +3,7 @@ export { default as Header } from './Header/Header';
 export { default as About } from './About/About';
 export { default as Works } from './Works/Works';
 export { default as Contact } from './Contact/Contact';
+export { default as Work_1 } from './Work_pages/Work_1';
+export { default as Work_2 } from './Work_pages/Work_2';
+export { default as Work_3 } from './Work_pages/Work_3';
 export { default as Footer } from './Footer/Footer';

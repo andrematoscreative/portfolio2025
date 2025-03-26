@@ -35,7 +35,7 @@ const About = () => {
         <article className='app__about-content'>
           <p className='app__about-text'>
             <span className="light-gray">
-            I’m a Portugal-based software developer with a background in IT and multimedia.
+            I’m a Portugal-based software web developer with a background in IT and multimedia.
             </span>
             <br />
             I work with JavaScript, Python, C#, and Java, using tools like React, Node, and .NET.

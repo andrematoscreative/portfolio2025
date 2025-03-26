@@ -15,37 +15,54 @@
     position: relative;
 }
 
-.app__navbar-logo {
+/*.logo-link {
+    cursor: pointer;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--lightGray-color);
+    transition: color 0.7s ease-in-out;
+    text-decoration: none;
+  
+    &:hover {
+      color: var(--green-color);
+    }
+  }*/
+
+.logo-link {
     display: flex;
     align-items: center;
     justify-content: center;
     cursor: pointer;
-    position: relative;
-
-    a {
-        text-decoration: none;
-        font-size: 1.5rem;
-        font-weight: 700;
-        color: var(--lightGray-color);
-        transition: color 0.7s ease-in-out;
-        width: 125px;
-        line-height: 22px;
-        padding: 2rem 2rem;
+    position: relative;    
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--lightGray-color);
+    transition: color 0.7s ease-in-out;
+    width: 125px;
+    line-height: 22px;
+    padding: 2rem 7rem;
 
         &:hover {
             color: var(--green-color);
         }
-    }
+    
 }
 
-.app__navbar-logo.work-page a {
-    color: black !important;
+.app__navbar-links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 5rem;
+}
+
+.app__navbar-logo .logo-link .work-page {
+    color: rgb(0, 0, 0) !important;
 }
 
 
 @media screen and (max-width: 900px) {
-    .app__navbar-logo 
-    a {
+    .logo-link {
         font-size: 1.4rem;
         padding: 1.6rem 1.6rem;
         line-height: 21px; 
@@ -53,8 +70,7 @@
 }
 
 @media screen and (max-width: 450px) {
-    .app__navbar-logo 
-    a {
+    .logo-link {
         font-size: 1.1rem;
         padding: 1.4rem 1.2rem;
         line-height: 17px;
@@ -79,53 +95,48 @@
     }
 }
 
-.app__navbar-links {
-    display: flex;
-    align-items: center;
-    list-style: none;
-    margin-right: 5rem;
-
-    li {
-        margin-left: 60px;
-        position: relative;
-        cursor: pointer;
-
-        a {
-            color: var(--lightGray-color);
-            text-decoration: none;
-            font-size: 1rem;
-            font-weight: 700;
-            transition: all 0.5s ease-in-out;
-            position: relative;
-
-            &:hover {
-                color: var(--secondary-color);
-            }
-        }
-
-        a::after {
-            content: '';
-            position: absolute;
-            left: 0;
-            bottom: -3px;
-            width: 100%;
-            height: 2px;
-            background-color: var(--green-color);
-            transform: scaleX(0);
-            transform-origin: left;
-            transition: transform 0.3s ease-in-out;
-        }
-
-        a.active::after {
-            transform: scaleX(1);
-            transform-origin: left;
-        }
-
-        a:not(.active)::after {
-            transform-origin: right;
-        }
+li {
+    margin-left: 60px;
+    position: relative;
+    cursor: pointer;
+  
+    .active {
+      color: var(--secondary-color);
     }
-}
+  
+    span {
+        display: inline-block;
+        position: relative;
+        color: var(--lightGray-color);
+        text-decoration: none;
+        font-size: 1rem;
+        font-weight: 700;
+        transition: all 0.5s ease-in-out;
+  
+      &::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: -3px;
+        width: 100%;
+        height: 2px;
+        background-color: var(--green-color);
+        transform: scaleX(0);
+        transform-origin: left;
+        transition: transform 0.3s ease-in-out;
+      }
+  
+      &.active::after {
+        transform: scaleX(1);
+        transform-origin: left;
+      }
+  
+      &:hover {
+        color: var(--secondary-color);
+      }
+    }
+  }
+  
 
 
 @media screen and (max-width: 1080px) {
@@ -220,10 +231,10 @@
     li {
         margin-bottom: 2.5rem;
 
-        a {
+        
             color: var(--hover-color);
             text-decoration: none;
-            font-size: 2rem;
+            font-size: 3rem;
             font-weight: 600;
             transition: all 0.3s ease-in-out;
 
@@ -235,6 +246,8 @@
                 font-size: 1.5rem;
              
             }
-        }
+        
     }    
 }
+
+  

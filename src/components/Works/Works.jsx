@@ -26,7 +26,7 @@ const Works = () => {
 
   const workItems = [
     { title: 'PLATE PERFECTION', description: 'Restaurant website', bg: images.card_1, link: '/work/work_1' },
-    { title: 'CREATIVE BRANDING', description: 'André Matos Creative Branding', bg: images.card_2, link: '/work/work_2' }, // ✅ Fix: lowercase URL
+    { title: 'CREATIVE BRANDING', description: 'André Matos Creative Branding', bg: images.card_2, link: '/work/work_2' },
     { title: 'MEDICAL APP', description: 'Find my Medical Spot App', bg: images.card_3, link: '/work/work_3' },
     { title: 'E-COMMERCE WEBSITE', description: 'Online retail store', bg: images.card_4, link: '/work/ecommerce' }
   ];  

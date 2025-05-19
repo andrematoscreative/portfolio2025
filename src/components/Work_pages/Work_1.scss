@@ -1,20 +1,47 @@
-.work {
-  padding: 4rem 2rem;
-  font-family: 'Montserrat', sans-serif;
+.work_1 {
+  padding: 5rem 5rem 2rem;
   color: #333;
 
-  &__hero {
+  &__title {
     text-align: center;
     margin-bottom: 3rem;
 
-    & .work__title {
-      font-size: 3rem;
+    &-text {
+      font-size: 4rem;
       font-weight: 700;
     }
 
-    & .work__subtitle {
+    &-subtitle {
       font-size: 1.5rem;
       color: #666;
+    }
+  }
+
+  &__section1 {
+    margin-bottom: 2.5rem;
+
+    &-title {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+
+    &-text {
+      font-size: 1rem;
+      line-height: 1.6;
+    }
+  }
+
+  &__section2 {
+    margin-bottom: 2.5rem;
+
+    &-title {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+
+    &-text {
+      font-size: 1rem;
+      line-height: 1.6;
     }
   }
 
@@ -60,7 +87,7 @@
   &__cta {
     text-align: center;
 
-    .work__button {
+    .work_1__button {
       display: inline-block;
       padding: 0.75rem 1.5rem;
       background-color: #28a745;
